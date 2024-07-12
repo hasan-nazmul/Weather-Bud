@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+ <title>Weather App</title>
+</head>
+
+<body>
+ <nav>
+  <h3 class="logo">Weather <span>Bud</span></h3>
+  <ul class="links">
+   <li class="home_link"><a href="#home">home</a></li>
+   <li class="update_link"><a href="#update">update</a></li>
+   <li class="news_link"><a href="#pollution">air pollution</a></li>
+   <li class="news_link"><a href="#news">news</a></li>
+  </ul>
+ </nav>
+ <div id="home">
+  <div class="flex_element">
+   <div class="text">
+    <h2>Today's Weather</h2>
+    <p class="temp_text">
+     The weather in your area is currently [weather condition]. The temperature is [temperature] degrees Celsius, with
+     [humidity]% humidity. The wind is [wind speed] km/h coming from the [wind direction]. Expect [forecast] for the
+     next few
+     hours. Stay prepared and enjoy your day!
+    </p>
+    <a href="#update"><button class="learn_more">Learn More</button></a>
+   </div>
+   <div class="temperature">
+    <div class="temp_icon"></div>
+    <h1 class="temp">00&deg;c</h1>
+    <h4 class="situation">Unknown</h4>
+    <h4>Feels like : <span class="feels_like">00&deg;c</span></h4>
+    <h5 class="time"></h5>
+    <h5 class="day"></h5>
+    <h5 class="place"></h5>
+   </div>
+  </div>
+ </div>
+ <div id="update">
+  <div class="vertical">
+   <div class="horizontal">
+    <a href="humidity.html" target="_blank">
+     <div class="box">
+      <h1><i class="fas fa-tint"></i></h1>
+      <br>
+      <h4>Humidity</h4>
+      <br>
+      <h4 class="humidity">00 %</h4>
+     </div>
+    </a>
+
+    <a href="sunrise.html" target="_blank">
+     <div class="box">
+      <h1><i class="fas fa-sun"></i></h1>
+      <br>
+      <h4>Sunrise</h4>
+      <br>
+      <h4 class="sunrise">00 : 00 AM</h4>
+     </div>
+    </a>
+
+    <a href="gust.html" target="_blank">
+     <div class="box">
+      <h1><i class="fas fa-wind"></i></h1>
+      <br>
+      <h4>Gust</h4>
+      <br>
+      <h4 class="gust">00 m/s</h4>
+     </div>
+    </a>
+
+   </div>
+   <div class="horizontal">
+    <a href="pressure.html" target="_blank">
+     <div class="box">
+      <h1><i class="fas fa-compress"></i></h1>
+      <br>
+      <h4>Pressure</h4>
+      <br>
+      <h4 class="pressure">00 hPa</h4>
+     </div>
+    </a>
+
+    <a href="sunset.html" target="_blank">
+     <div class="box">
+      <h1><i class="fas fa-regular fa-cloud-moon"></i></h1>
+      <br>
+      <h4>Sunset</h4>
+      <br>
+      <h4 class="sunset">00 : 00 PM</h4>
+     </div>
+    </a>
+
+    <a href="speed.html" target="_blank">
+     <div class="box">
+      <h1><i class="fas fa-tachometer-alt"></i></h1>
+      <br>
+      <h4>Wind Speed</h4>
+      <br>
+      <h4 class="speed">143 km/h</h4>
+     </div>
+    </a>
+
+   </div>
+  </div>
+ </div>
+ <div id="pollution">
+    <div class="dataDiv"></div>
+</div>
+ <div id="news">
+  <div class="vertical">
+   <div class="horizontal">
+    <div class="box1">
+        <p>The Weather Channel</p>
+     <h4>Unusual Deep South June Severe Weather Outbreak Expected</h4>
+     <br>
+     <a href="https://weather.com/storms/severe/news/2023-06-14-severe-outbreak-forecast-south" target="_blank">
+      <i class="fas fa-chevron-circle-right"></i>
+     </a>
+    </div>
+    <div class="box1">
+        <p>The Weather Channel</p>
+     <h4>Wildfire Smoke Returns To US</h4>
+     <br>
+     <a href="https://weather.com/news/weather/video/wildfire-smoke-returns-to-us" target="_blank">
+      <i class="fas fa-chevron-circle-right"></i>
+     </a>
+    </div>
+    <div class="box1">
+        <p>The Sports Rush</p>
+     <h4>Shere Bangla National Stadium Dhaka Weather</h4>
+     <br>
+     <a
+      href="https://thesportsrush.com/cricket-news-shere-bangla-national-stadium-dhaka-weather-mirpur-stadium-weather-forecast-for-ban-vs-afg-test-day-1/"
+      target="_blank">
+      <i class="fas fa-chevron-circle-right"></i>
+     </a>
+    </div>
+   </div>
+
+   <div class="horizontal">
+    <div class="box1">
+    <p>RN 365</p>
+     <h4>2023 Canadian GP weather forecast: Is a 2022 repeat in store?</h4>
+     <br>
+     <a href="https://racingnews365.com/2023-canadian-gp-weather-forecast-is-a-2022-repeat-in-store" target="_blank">
+      <i class="fas fa-chevron-circle-right"></i>
+     </a>
+    </div>
+    <div class="box1">
+        <p>FOX 35 Orlando</p>
+     <h4>Orlando weather: Storms possible overnight</h4>
+     <br>
+     <a
+      href="https://www.fox35orlando.com/news/orlando-weather-scorching-hot-humid-day-with-rain-chances-for-portion-of-across-central-florida"
+      target="_blank">
+      <i class="fas fa-chevron-circle-right"></i>
+     </a>
+    </div>
+    <div class="box1">
+        <p>Khaleej Times</p>
+     <h4>UAE weather: Chance of rain; temperatures to reach 41°C</h4>
+     <br>
+     <a href="https://www.khaleejtimes.com/uae/weather/uae-weather-chance-of-rain-temperatures-to-reach-41c"
+      target="_blank">
+      <i class="fas fa-chevron-circle-right"></i>
+     </a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <footer>
+  <h5>copyright &copy; 2024 Nazmul Hasan (C201018, 5DM). All rights reserved.</h5>
+ </footer>
+ <script src="app.js"></script>
+</body>
+
+</html>
